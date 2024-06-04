@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">placeholder txt</p><br>
+                <p>Quer ordens claras e concisas, que não exijam qualquer julgamento da sua parte.</p><br>
+                <p> plchrd txt</p><br>
+                <p> plchdr txt</p><br>
+                <p> plchrd txt</p><br>
+            </div>
+            <div class="image-container">
+                <img src="Meursaultfull.png" alt="Meursault's full splash art" class="active">
+                <img src="Meursaulticon.png" alt="Meursault's character icon">
+                <img src="Meursault_Sinner_Icon.png" alt="Meursault's sinner icon">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>

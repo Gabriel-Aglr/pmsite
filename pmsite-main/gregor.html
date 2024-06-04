@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">placeholder txt</p><br>
+                <p> Este pecador é relativamente fácil de lidar em termos de personalidade. No entanto, um surto de emoção ou uma mudança súbita de ambiente pode fazer com que partes ou a totalidade do seu corpo se transformem em tecidos de inceto (nomeadamente uma carapaça, semelhante à do _________). Se não quiser ser um gestor rude (não que seja obrigado a ser simpático), recomendamos que mantenha a sua expressão facial controlada para que o seu desgosto não seja visível para ele. Por vezes, ele usa uma linguagem cínica, mas é possível falar com ele e pode contorná-lo sem grande dificuldade, desde que aprenda como. </p><br>
+                <p> plchrd txt</p><br>
+                <p> plchdr txt</p><br>
+                <p> plchrd txt</p><br>
+            </div>
+            <div class="image-container">
+                <img src="Gregorfull.png" alt="Gregor's full splash art" class="active">
+                <img src="Gregoricon.png" alt="Gregor's character icon">
+                <img src="Gregor_Sinner_Icon.png" alt="Gregor's sinner icon">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>

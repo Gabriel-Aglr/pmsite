@@ -1,0 +1,244 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    background-image: url(1716824947112.jpg);
+    background-size: cover;
+}
+
+.logo {
+    padding-top: 0%;
+    padding-left: 5%;
+    width: 5%;
+    height: 5%;
+}
+
+.logoname {
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 65%;
+    width: 25%;
+    height: 89%;
+}
+
+header {
+    background-color:  #610d0d;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    font-size: 80%;
+}
+
+.infobox {
+    background-color: #130909;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    padding: 1%;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infobox h2 {
+    text-align: center;
+}
+
+.dth {
+    padding-right: 10%;
+    padding-left: 35%;
+    width: 30%;
+    height: 10%;
+}
+
+.infobox p {
+    text-align: center;
+    padding-left: 15%;
+    padding-top: 4%;
+    padding-right: 15%;
+    font-size: larger;
+}
+
+.inbox {
+    border-radius: 0.3rem;
+    background-color: #130909;
+    border: 1px solid #ccc;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    align-items: flex-start;
+}
+
+.item {
+    flex: 1 1 calc(100% / 6 - 4%);
+    max-width: calc(100% / 6 - 4%);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item a {
+    display: block;
+    margin-top: 0.5rem;
+    color: rgb(250, 236, 37);
+    text-decoration: none;
+    font-size: clamp(60%, 70%, 120%);
+}
+
+.item a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+    transition: 0.3s ease;
+}
+
+.container {
+    border-radius: 0.3rem;
+    background-color: #130909;
+    border: 1px solid #ccc;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;  
+    gap: 2%;
+    height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box; 
+}
+
+.inner-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden; 
+}
+
+.image-container {
+    border-radius: 0.3rem;
+    background-color: #130909;
+    border: 1px solid #ccc;
+    margin: 1%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; 
+    margin-left: auto;
+    padding: 1%; 
+    display: flex;
+    align-items: center; 
+    max-height: 60%; 
+}
+
+.text-container {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.text-container p {
+    margin-top: 0%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%; 
+    display: none; 
+}
+
+.image-container img.active {
+    display: block; 
+}
+
+.button-container {
+    text-align: right;
+    margin-right: 12%;
+    margin-top: 1%;
+}
+.button-container button{
+    background-color: #740303;
+    color:  #ffffff;
+}
+
+.container .tophtr {
+    margin-top: 6%;
+}
+
+@media (max-width: 768px) {
+    .inner-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Faça um site com as seguintes especificações:
+
+1) Conteúdo em HTML - 1.0 ponto
+
+2) Estilização em CSS - 1.0
+
+3) Uma interatividade em JavaScript - 1.0 ponto
+
+4) Responsividade e publicação (GitHub ou LocalHost)
+
+ 
+
+Não será exigido o Back End, mas caso tenha sido feito, este pode ser publicado no site de hospedagem LocalHost.
+
+ 
+
+Coloque o endereço da URL na atividade.*/ 

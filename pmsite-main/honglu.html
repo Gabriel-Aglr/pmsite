@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">placeholder txt</p><br>
+                <p> Um pecador que viveu uma vida abastada antes de se tornar um ativo da nossa empresa. Como tal, tem uma certa admiração por uma vida livre; mas, ocasionalmente, pode fazer perguntas ignorantes e desagradáveis em relação à comida cozinhada por um certo outro pecador ou a outros aspectos da cultura humilde dos humildes. Isto pode causar muita irritação aos outros pecadores. </p><br>
+                <p> plchrd txt</p><br>
+                <p> plchdr txt</p><br>
+                <p> No entanto, é importante notar que os seus questionamentos curiosos não têm qualquer conotação sarcástica, pelo que não é aconselhável deixar que eles se irritem com isso.</p><br>
+            </div>
+            <div class="image-container">
+                <img src="Honglufull.png" alt="Hong Lu's full splash art" class="active">
+                <img src="Hongluicon.png" alt="Hong Lu's character art">
+                <img src="Hong_Lu_Sinner_Icon.png" alt="Hong Lu's sinner icon">
+                <img src="" alt="">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>

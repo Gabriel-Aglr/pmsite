@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">placeholder txt</p><br>
+                <p> Este pecador prefere agir em vez de esperar que a lógica dite o seu rumo. Os seus pensamentos e sentimentos são claramente visíveis no seu comportamento e não tem qualquer intenção de os esconder; a sua impetuosidade pode causar dores de cabeça (ou ferimentos físicos que levem a uma dor de cabeça) no processo de formação de uma relação. Note que isto não é uma indicação de danos graves no método de pensamento do pecador.</p><br>
+                <p> plchrd txt</p><br>
+                <p> plchdr txt</p><br>
+                <p> Se o ataque de fúria persistir, contacte o departamento de recursos humanos. Quando perceber que ele é do tipo que tende a não pensar muito sobre as coisas, será mais fácil lidar com ele. </p><br>
+            </div>
+            <div class="image-container">
+                <img src="Heathclifffull.png" alt="Heathcliff's full splash art" class="active">
+                <img src="Heathclifficon.png" alt="Heathcliff's character art">
+                <img src="Heathcliff_Sinner_Icon.png" alt="Heathcliff's sinner icon">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>
