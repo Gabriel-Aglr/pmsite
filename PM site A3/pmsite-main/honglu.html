@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong lu</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">Pecador Número 6: Hong Lu</p><br>
+                <p> Um pecador que viveu uma vida abastada antes de se tornar um ativo da nossa empresa. Como tal, tem uma certa admiração por uma vida livre; mas, ocasionalmente, pode fazer perguntas ignorantes e desagradáveis em relação à comida cozinhada por um certo outro pecador ou a outros aspectos da cultura humilde dos humildes. Isto pode causar muita irritação aos outros pecadores. </p><br>
+                <p> Hong Lu é baseado no livro "Dream of the Red Chamber" ou "Sonho da Câmara vermelha" em português, escrito por Cao Xueqin. A história se trata de uma pedra sentiente, que sobrou quando a deusa Nüwa consertou o céu há eras atrás, querendo desfrutar dos prazeres do reino mortal, a Pedra implora a um sacerdote taoísta e a um monge budista que a levem consigo para conhecer o mundo, a Pedra, junto com um companheiro (dependendo da versão eles são fundidos no mesmo personagem), tem então a chance de entrar no reino mortal, renascendo como Jia Baoyu. </p><br>
+                <p> Hong Lu luta com longo guandao modificado, olhando para a sua orígem, o gerente executivo pode esperar que Hong Lu seja apenas um garoto rico que não tem nenhuma experiência com combate, este pensamento se prova incorreto, Hong Lu é de fato um dos melhores pecadores quando se trata de combate, seu longo guandao sendo capaz de tomar conta de um inimigo e se mover rapidamente para outro. Hong Lu pode ser visto como distraído, mas de vez en quando seus talentos e/ou perguntas se provam a ser beneficiais para o time. É importante notar que o seu olho ciano de vez enquando brilha em combate, semelhante a Ryōshū.</p><br>
+                <p> No entanto, é importante notar que os seus questionamentos curiosos não têm qualquer conotação sarcástica, pelo que não é aconselhável deixar que eles se irritem com isso.</p><br>
+            </div>
+            <div class="image-container">
+                <img src="Honglufull.png" alt="Hong Lu's full splash art" class="active">
+                <img src="Hongluicon.png" alt="Hong Lu's character art">
+                <img src="Hong_Lu_Sinner_Icon.png" alt="Hong Lu's sinner icon">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faust</title>
+    <link rel="stylesheet" href="pmc.css">
+    <link rel="icon" href="limbus_company_icon-removebg-preview.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+        <img class="logo" src="sinners PI/logolimbus.png" alt="">
+        <img class="logoname" src="limbus_logo_text_02-1.png" alt="">
+    </header>
+    <div class="button-container">
+        <button onclick="nextImage()">Próxima Imagem</button>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-container">
+                <p class="tophtr">Pecador Número 2:Faust</p><br>
+                <p> A pecadora que desenvolveu o motor do Mefistófeles, o onibus da empresa Limbus. Ela afirma que não há ninguém na cidade que possa rivalizar com a sua biblioteca de conhecimento e sabedoria, e não está necessariamente errada. A sua atitude arrogante quando permite que falemos com ela pode desagradar, mas como ela trata todos com gestos subtis de arrogância, não há esperança de que ela se desfaça disso, nunca. Recomendamos que simplesmente acene com a cabeça uma vez e ultrapasse o assunto. Apesar de ter um génio inigualável, não conseguimos perceber como usar este. Talvez você possa descobrir?</p><br>
+                <p> Faust é baseaada no livro "Goethe's Faust" ou "O Fausto de Goethe" em português, uma semelhança é a sua conexão com Mefistófeles, no livro, Faust troca sua alma por conhecimento ilimitado, e Mefistófeles é o demônio que faz a troca, já em Limbus Company, Mefistófeles é o onibus construido por Faust, que leva ela e os outros pecadores ao inferno.</p><br>
+                <p> A principal arma de Faust em combate é seu zweihander, "WALPURGISNACHT", semelhante a Yi Sang, Faust não é a melhor em combate, ajundando mais o grupo através de seu grande conhecimento.</p><br>
+                <br>
+            </div>
+            <div class="image-container">
+                <img src="Faustfull.png" alt="Faust's full splash art" class="active">
+                <img src="Fausticon.png" alt="Faust's character icon">
+                <img src="Faust_Sinner_Icon.png" alt="Faust's sinner icon">
+            </div>
+        </div> 
+    </div>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+
+        function nextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+        images[0].classList.add('active');
+    </script>
+    <a href="index.html">Retornar a Pagina Inicial</a>
+    <footer>
+        <br>O conteúdo da comunidade está disponível sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC-BY-SA</a>, salvo indicação em contrário. Direitos reservados a <a href="https://projectmoon.studio/eng/main/">Project Moon</a>. <a href="https://limbuscompany.com">Pagina oficial do jogo</a>
+    </footer>
+</body>
+</html>
